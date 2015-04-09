@@ -7,16 +7,23 @@ Created on Wed Apr 07 23:11:39 2015
 
 
 def main():
-    import sys
+    import argparse
+    parser = argparse.ArgumentParser(
+        prog='ircelsos',
+        description='Download air quality data from the SOS of IRCEL - CELINE.')
+
+    parser.add_argument('pollutant',
+                        help='The pollutant')
+    parser.add_argument('--station', '-s', nargs=1,
+                        help='Station number')
+    parser.add_argument('--period', '-p', type=str, nargs=2,
+                        help='Period of the measurements given as "start stop"')
+    args = parser.parse_args()
+
     from query_ircelsos import query_ircelsos
     from sosparser import get_observations, parse_observation
-
-    pol = sys.argv[1]
-    station = sys.argv[2]
-    utc_start = sys.argv[3]
-    utc_end = sys.argv[4]
-
-    response = query_ircelsos(pol, station, utc_start, utc_end)
+    response = query_ircelsos(args.pollutant, args.station[0], args.period[0],
+                              args.period[1])
     observations = get_observations(response)
 
     for obs in observations:
