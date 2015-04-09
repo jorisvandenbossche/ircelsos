@@ -4,7 +4,7 @@ Created on Wed Apr 07 23:11:39 2015
 
 @author: Joris Van den Bossche
 """
-
+from __future__ import print_function
 
 def main():
     import argparse
@@ -24,6 +24,9 @@ def main():
     from query_ircelsos import query_ircelsos
     from sosparser import get_observations, parse_observation
 
+    print("SOS of IRCEL - CELINE")
+    print("Downloading ...")
+
     pollutant = args.pollutant
     if args.station:
         station = args.station[0]
@@ -36,5 +39,7 @@ def main():
     for obs in observations:
         st_info, raw_data = parse_observation(obs)
 
-        with file('{0}_{1}.csv'.format(pollutant, st_info['name']), 'w') as f:
+        filename = '{0}_{1}.csv'.format(pollutant, st_info['name'])
+        print("Writing file '{}'".format(filename))
+        with file(filename, 'w') as f:
             f.writelines(raw_data.replace(';', '\n'))
