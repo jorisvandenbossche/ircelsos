@@ -15,19 +15,26 @@ def main():
     parser.add_argument('pollutant',
                         help='The pollutant')
     parser.add_argument('--station', '-s', nargs=1,
-                        help='Station number')
+                        help='Station number. If no provided, use all available'
+                        ' stations for that pollutant')
     parser.add_argument('--period', '-p', type=str, nargs=2,
                         help='Period of the measurements given as "start stop"')
     args = parser.parse_args()
 
     from query_ircelsos import query_ircelsos
     from sosparser import get_observations, parse_observation
-    response = query_ircelsos(args.pollutant, args.station[0], args.period[0],
+
+    pollutant = args.pollutant
+    if args.station:
+        station = args.station[0]
+    else:
+        station = None
+    response = query_ircelsos(pollutant, station, args.period[0],
                               args.period[1])
     observations = get_observations(response)
 
     for obs in observations:
         st_info, raw_data = parse_observation(obs)
 
-        with file('{0}_{1}.csv'.format(pol, station), 'w') as f:
+        with file('{0}_{1}.csv'.format(pollutant, st_info['name']), 'w') as f:
             f.writelines(raw_data.replace(';', '\n'))

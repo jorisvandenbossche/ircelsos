@@ -52,7 +52,8 @@ def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
     observedProperties = pol
     responseFormat = 'text/xml;subtype="om/1.0.0"'
     kwds = {}
-    kwds['featureofinterest'] = station
+    if station:
+        kwds['featureofinterest'] = station
     kwds['eventTime'] = utc_start + '/' + utc_end
 
     response = sos.get_observation(offerings=offerings, responseFormat=responseFormat,
