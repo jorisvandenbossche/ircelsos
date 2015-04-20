@@ -17,7 +17,7 @@ setup(
     install_requires=['owslib'],
     entry_points={
         'console_scripts': [
-            'ircelsos=ircelsos:main',
+            'ircelsos=ircelsos.main:main',
         ],
     },
 )
