@@ -3,6 +3,9 @@ ircelsos
 
 Downloading air quality data from the SOS of IRCEL - CELINE
 
+This package only works with python 2.7 (as the dependency ``OWSlib`` is not
+yet ported to python 3).
+
 Installing::
 
     python setup.py install
