@@ -6,6 +6,7 @@ Created on Wed Apr 07 21:50:53 2015
 """
 
 import datetime
+import dateutil
 
 from owslib.sos import SensorObservationService
 
@@ -43,10 +44,22 @@ def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
         pol = [pol]
 
     # check start and end
-    if isinstance(utc_start, datetime.datetime):
-        utc_start = datetime.datetime.strftime(utc_start, '%Y-%m-%dT%H:%M:%S')
+    if not isinstance(utc_start, datetime.datetime):
+        try:
+            utc_start = dateutil.parser.parse(utc_start)
+        except ValueError:
+            msg = "Start date '{0}' not recognized as a valid date".format(utc_start)
+            raise ValueError(msg)
     if isinstance(utc_end, datetime.datetime):
-        utc_end = datetime.datetime.strftime(utc_end, '%Y-%m-%dT%H:%M:%S')
+        try:
+            utc_end = dateutil.parser.parse(utc_end)
+        except ValueError:
+            msg = "Start date '{0}' not recognized as a valid date".format(utc_end)
+            raise ValueError(msg)
+
+    # enure the correct string format for start and end
+    utc_start = dateutil.datetime.strftime(utc_start, '%Y-%m-%dT%H:%M:%S')
+    utc_end = datetime.datetime.strftime(utc_end, '%Y-%m-%dT%H:%M:%S')
 
     offerings = pol
     observedProperties = pol
