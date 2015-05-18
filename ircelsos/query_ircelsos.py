@@ -50,7 +50,7 @@ def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
         except ValueError:
             msg = "Start date '{0}' not recognized as a valid date".format(utc_start)
             raise ValueError(msg)
-    if isinstance(utc_end, datetime.datetime):
+    if not isinstance(utc_end, datetime.datetime):
         try:
             utc_end = dateutil.parser.parse(utc_end)
         except ValueError:
@@ -58,7 +58,7 @@ def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
             raise ValueError(msg)
 
     # enure the correct string format for start and end
-    utc_start = dateutil.datetime.strftime(utc_start, '%Y-%m-%dT%H:%M:%S')
+    utc_start = datetime.datetime.strftime(utc_start, '%Y-%m-%dT%H:%M:%S')
     utc_end = datetime.datetime.strftime(utc_end, '%Y-%m-%dT%H:%M:%S')
 
     offerings = pol
