@@ -6,7 +6,7 @@ Created on Wed Apr 07 21:41:22 2015
 """
 
 #import os
-import StringIO
+import io
 import xml.etree.ElementTree as ET
 
 
@@ -16,7 +16,7 @@ import xml.etree.ElementTree as ET
 def get_observations(response):
 
     if isinstance(response, str):
-        response = StringIO.StringIO(response)
+        response = io.StringIO(response)
 
     #tree = ET.parse('temp.xml')
     tree = ET.parse(response)

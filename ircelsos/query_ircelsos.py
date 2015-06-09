@@ -12,7 +12,7 @@ from owslib.sos import SensorObservationService
 
 sos = SensorObservationService("http://sos.irceline.be/sos")
 
-pollutants = sos.contents.keys()
+pollutants = list(sos.contents.keys())
 
 SAROAD_CODE = {'o3': '44201 - O3',
                'no2': '42602 - NO2',
