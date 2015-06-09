@@ -43,5 +43,5 @@ def main():
 
     filename = '{0}_{1}.csv'.format(pollutant, st_info['name'])
     print("Writing file '{}'".format(filename))
-    with file(filename, 'w') as f:
+    with open(filename, 'w') as f:
         f.writelines(raw_data.replace(';', '\n'))

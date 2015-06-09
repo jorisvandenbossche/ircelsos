@@ -15,7 +15,9 @@ import xml.etree.ElementTree as ET
 
 def get_observations(response):
 
-    if isinstance(response, str):
+    if isinstance(response, bytes):
+        response = io.BytesIO(response)
+    elif isinstance(response, str):
         response = io.StringIO(response)
 
     #tree = ET.parse('temp.xml')
