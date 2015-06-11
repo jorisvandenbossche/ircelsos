@@ -37,6 +37,8 @@ def main():
     observations = get_observations(response)
     if not observations:
         print('No observations found')
+        import sys
+        sys.exit()
 
     for obs in observations:
         st_info, raw_data = parse_observation(obs)
