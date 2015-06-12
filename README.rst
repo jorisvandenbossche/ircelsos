@@ -1,22 +1,14 @@
 ircelsos
 ========
 
-Downloading air quality data from the SOS of IRCEL - CELINE
+Downloading air quality data from the SOS of IRCEL - CELINE.
 
 Installing (running from this directory)::
 
     python setup.py install
 
-.. note::
-
-    Note on Python 3: the dependency
-    `OWSlib <https://github.com/geopython/OWSLib>`_ is not yet python 3
-    compatible, however the development version has been ported. To install the
-    development version::
-
-        pip install git+https://github.com/geopython/OWSLib.git
-
-    This has to be installed before installing ircelsos.
+This will automatically install the dependency `OWSlib <https://github.com/geopython/OWSLib>`_.
+ircesos supports python 2.7 and 3.3+. For python 3, OWSlib 9.0 or higher is needed.
 
 Installing ircelsos will register a ``ircelsos`` command. This can be used from
 the command line to download data::
