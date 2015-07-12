@@ -22,7 +22,7 @@ def main():
     args = parser.parse_args()
 
     from .query_ircelsos import query_ircelsos
-    from .sosparser import get_observations, parse_observation
+    from .parser import get_observations, parse_observation
 
     print("SOS of IRCEL - CELINE")
     print("Downloading ...")

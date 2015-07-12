@@ -4,7 +4,7 @@ from __future__ import print_function, division
 import unittest
 
 from ircelsos.query_ircelsos import query_ircelsos
-from ircelsos.sosparser import get_observations, parse_observation
+from ircelsos.parser import get_observations, parse_observation
 
 class TestQuery(unittest.TestCase):
 

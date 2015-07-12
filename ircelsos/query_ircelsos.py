@@ -8,11 +8,9 @@ Created on Wed Apr 07 21:50:53 2015
 import datetime
 import dateutil
 
-from owslib.sos import SensorObservationService
+from . import SOS
 
-sos = SensorObservationService("http://sos.irceline.be/sos")
-
-pollutants = list(sos.contents.keys())
+pollutants = list(SOS.contents.keys())
 
 SAROAD_CODE = {'o3': '44201 - O3',
                'no2': '42602 - NO2',
@@ -69,7 +67,7 @@ def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
         kwds['featureofinterest'] = station
     kwds['eventTime'] = utc_start + '/' + utc_end
 
-    response = sos.get_observation(offerings=offerings, responseFormat=responseFormat,
+    response = SOS.get_observation(offerings=offerings, responseFormat=responseFormat,
                                    observedProperties=observedProperties, **kwds)
 
     return response

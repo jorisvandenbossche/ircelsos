@@ -3,6 +3,8 @@
 Created on Wed Apr 07 21:41:22 2015
 
 @author: Joris Van den Bossche
+
+Functionality for parsing the returned XML.
 """
 
 #import os
@@ -10,10 +12,15 @@ import io
 import xml.etree.ElementTree as ET
 
 
-#os.chdir("D:\PhD\github\ircelsos\ircelsos")
-
-
 def get_observations(response):
+    """
+    Extract the Observation elements from the ObservationCollection.
+
+    Returns
+    -------
+    observations : list
+
+    """
 
     if isinstance(response, bytes):
         response = io.BytesIO(response)
@@ -40,6 +47,15 @@ def get_observations(response):
 
 
 def parse_observation(obs):
+    """
+    Parse the Observation element: extract the featureOfInterest
+    information into `st_info` and the values from the result -
+    DataArray into `raw_data`.
+
+    Returns
+    -------
+    st_info, raw_data
+    """
 
     assert obs.tag == '{http://www.opengis.net/om/1.0}Observation'
 
