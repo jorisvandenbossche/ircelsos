@@ -42,6 +42,9 @@ def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
         pol = [pol]
 
     # check start and end
+    if (utc_start is None) or (utc_end is None):
+        raise ValueError("utc_start and utc_end cannot be None")
+
     if not isinstance(utc_start, datetime.datetime):
         try:
             utc_start = dateutil.parser.parse(utc_start)

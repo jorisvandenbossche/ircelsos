@@ -6,6 +6,7 @@ import unittest
 from ircelsos.query_ircelsos import query_ircelsos
 from ircelsos.parser import get_observations, parse_observation
 
+
 class TestQuery(unittest.TestCase):
 
     def test_query_and_parse(self):
@@ -36,4 +37,5 @@ class TestQuery(unittest.TestCase):
             query_ircelsos('bc', utc_start='2012-01-01T09:00:00:00')
 
         with self.assertRaises(ValueError):
-            query_ircelsos('bc', utc_end='2012-01-01T09:00:00:00')
+            query_ircelsos('bc', utc_start='2012-01-01T01:00:00',
+                           utc_end='2012-01-01T09:00:00:00')
