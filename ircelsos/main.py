@@ -43,7 +43,7 @@ def main():
     for obs in observations:
         st_info, raw_data = parse_observation(obs)
 
-    filename = '{0}_{1}.csv'.format(pollutant, st_info['name'])
-    print("Writing file '{}'".format(filename))
-    with open(filename, 'w') as f:
-        f.writelines(raw_data.replace(';', '\n'))
+        filename = '{0}_{1}.csv'.format(pollutant, st_info['name'])
+        print("Writing file '{}'".format(filename))
+        with open(filename, 'w') as f:
+            f.writelines(raw_data.replace(';', '\n'))
