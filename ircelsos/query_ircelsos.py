@@ -8,6 +8,8 @@ Created on Wed Apr 07 21:50:53 2015
 import datetime
 import dateutil
 
+import six
+
 from . import SOS
 
 pollutants = list(SOS.contents.keys())
@@ -19,6 +21,41 @@ SAROAD_CODE = {'o3': '44201 - O3',
                'so2': '42401 - SO2',
                'co': '42101 - CO',
                'bc': '16111 - Black Carbon'}
+
+
+def _check_date(date):
+    """Ensure correctly formatted string"""
+
+    if isinstance(date, six.string_types):
+        try:
+            date = dateutil.parser.parse(date)
+        except ValueError:
+            msg = "Start date '{0}' not recognized as a valid date".format(date)
+            raise ValueError(msg)
+
+    if isinstance(date, datetime.date):
+        date = datetime.datetime.strftime(date, '%Y-%m-%dT%H:%M:%S')
+
+    return date
+
+
+def _check_start_end(utc_start, utc_end):
+    """Check None"""
+
+    if utc_end is not None and utc_start is None:
+        raise ValueError("'utc_start' cannot be None if 'utc_end' "
+                         "is specified")
+
+    if utc_end is None and utc_start is not None:
+        utc_end = datetime.datetime.today()
+
+    utc_start = _check_date(utc_start)
+    utc_end = _check_date(utc_end)
+
+    if utc_start is None and utc_end is None:
+        return None
+    else:
+        return utc_start + '/' + utc_end
 
 
 def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
@@ -42,25 +79,7 @@ def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
         pol = [pol]
 
     # check start and end
-    if (utc_start is None) or (utc_end is None):
-        raise ValueError("utc_start and utc_end cannot be None")
-
-    if not isinstance(utc_start, datetime.datetime):
-        try:
-            utc_start = dateutil.parser.parse(utc_start)
-        except ValueError:
-            msg = "Start date '{0}' not recognized as a valid date".format(utc_start)
-            raise ValueError(msg)
-    if not isinstance(utc_end, datetime.datetime):
-        try:
-            utc_end = dateutil.parser.parse(utc_end)
-        except ValueError:
-            msg = "Start date '{0}' not recognized as a valid date".format(utc_end)
-            raise ValueError(msg)
-
-    # enure the correct string format for start and end
-    utc_start = datetime.datetime.strftime(utc_start, '%Y-%m-%dT%H:%M:%S')
-    utc_end = datetime.datetime.strftime(utc_end, '%Y-%m-%dT%H:%M:%S')
+    period = _check_start_end(utc_start, utc_end)
 
     offerings = pol
     observedProperties = pol
@@ -68,7 +87,7 @@ def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
     kwds = {}
     if station:
         kwds['featureofinterest'] = station
-    kwds['eventTime'] = utc_start + '/' + utc_end
+    kwds['eventTime'] = period
 
     response = SOS.get_observation(offerings=offerings, responseFormat=responseFormat,
                                    observedProperties=observedProperties, **kwds)

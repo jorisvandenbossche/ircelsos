@@ -2,6 +2,7 @@
 from __future__ import print_function, division
 
 import unittest
+import datetime
 
 from ircelsos.query_ircelsos import query_ircelsos
 from ircelsos.parser import get_observations, parse_observation
@@ -31,11 +32,25 @@ class TestQuery(unittest.TestCase):
 
     def test_date_parsing(self):
 
-        import dateutil
-        print(dateutil.__version__)
+        from ircelsos.query_ircelsos import _check_start_end
+
+        # basic case with strings
+        result = _check_start_end('2012-01-01T01:00:00', '2012-01-01T09:00:00')
+        expected = '2012-01-01T01:00:00/2012-01-01T09:00:00'
+        self.assertEqual(result, expected)
+
+        # basic case with datetimes
+        result = _check_start_end(datetime.datetime(2012, 1, 1, 1),
+                                  datetime.datetime(2012, 1, 1, 9))
+        expected = '2012-01-01T01:00:00/2012-01-01T09:00:00'
+        self.assertEqual(result, expected)
+
+        # invalid date strings raise error
         with self.assertRaises(ValueError):
-            query_ircelsos('bc', utc_start='2012-01-01T09:00:00:00')
+            _check_start_end(utc_start='2012-01-01T09:00:00:00', utc_end=None)
 
         with self.assertRaises(ValueError):
-            query_ircelsos('bc', utc_start='2012-01-01T01:00:00',
-                           utc_end='2012-01-01T09:00:00:00')
+            _check_start_end(utc_start='2012-01-01T01:00:00',
+                             utc_end='2012-01-01T09:00:00:00')
+
+        # not specifying anythin
