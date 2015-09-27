@@ -12,7 +12,7 @@ import six
 
 from . import SOS
 
-pollutants = list(SOS.contents.keys())
+POLLUTANTS = list(SOS.contents.keys())
 
 SAROAD_CODE = {'o3': '44201 - O3',
                'no2': '42602 - NO2',
@@ -40,7 +40,7 @@ def _check_date(date):
 
 
 def _check_start_end(utc_start, utc_end):
-    """Check None"""
+    """Check start/end and convert to combined value"""
 
     if utc_end is not None and utc_start is None:
         raise ValueError("'utc_start' cannot be None if 'utc_end' "
@@ -58,28 +58,56 @@ def _check_start_end(utc_start, utc_end):
         return utc_start + '/' + utc_end
 
 
+def _check_pollutant(pollutant):
+    """Check if valid pollutant or convert short form """
+
+    if pollutant not in POLLUTANTS:
+        try:
+            pollutant = SAROAD_CODE[pollutant]
+        except KeyError:
+            raise ValueError("Pollutant '{0}' not recognized".format(pollutant))
+
+    return pollutant
+
+
+def _process_sos_kwargs(pollutant=None, station=None, utc_start=None,
+                        utc_end=None):
+    """Convert arguments to correct form for SOS service"""
+
+    # check pollutant
+    if not isinstance(pollutant, list):
+        pollutant = [pollutant]
+
+    pollutant = [_check_pollutant(pol) for pol in pollutant]
+
+    # check station
+    if isinstance(station, list):
+        station = ','.join(station)
+
+    # check start and end
+    period = _check_start_end(utc_start, utc_end)
+
+    return pollutant, station, period
+
+
 def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
     """
     Parameters
     ----------
     pol : str or list of str
-    station :
-    utc_start, utc_end : datetime.datetime or string
+    station : str of list of str, optional
+        The station id(s). If not specified, query for all stations
+        for which data are available for given pollutant.
+    utc_start, utc_end : datetime.datetime or string, optional
+        If both are None, query entire availabe time period.
 
+    Returns
+    -------
+    response : string
     """
 
-    # check pollutant
-    if pol not in pollutants:
-        try:
-            pol = SAROAD_CODE[pol]
-        except KeyError:
-            raise KeyError("Pollutant '{0}' not recognized".format(pol))
-
-    if not isinstance(pol, list):
-        pol = [pol]
-
-    # check start and end
-    period = _check_start_end(utc_start, utc_end)
+    pol, station, period = _process_sos_kwargs(
+        pol, station, utc_start, utc_end)
 
     offerings = pol
     observedProperties = pol
@@ -89,8 +117,9 @@ def query_ircelsos(pol, station=None, utc_start=None, utc_end=None):
         kwds['featureofinterest'] = station
     kwds['eventTime'] = period
 
-    response = SOS.get_observation(offerings=offerings, responseFormat=responseFormat,
-                                   observedProperties=observedProperties, **kwds)
+    response = SOS.get_observation(
+        offerings=offerings, responseFormat=responseFormat,
+        observedProperties=observedProperties, **kwds)
 
     return response
 

@@ -54,3 +54,41 @@ class TestQuery(unittest.TestCase):
                              utc_end='2012-01-01T09:00:00:00')
 
         # not specifying anythin
+
+    def test_station_parsing(self):
+
+        from ircelsos.query_ircelsos import _process_sos_kwargs
+
+        # string
+        _, station, _ = _process_sos_kwargs('bc', station='BETR801')
+        expected = 'BETR801'
+        self.assertEqual(station, expected)
+
+        # list of strings
+        _, station, _ = _process_sos_kwargs('bc',
+                                            station=['BETR801', 'BETR802'])
+        expected = 'BETR801,BETR802'
+        self.assertEqual(station, expected)
+
+    def test_pollutant_parsing(self):
+
+        from ircelsos.query_ircelsos import _process_sos_kwargs
+
+        # use of short form
+        pollutant, _, _ = _process_sos_kwargs('bc')
+        expected = ['16111 - Black Carbon']
+        self.assertEqual(pollutant, expected)
+
+        # long form passed through
+        pollutant, _, _ = _process_sos_kwargs(pollutant='16111 - Black Carbon')
+        expected = ['16111 - Black Carbon']
+        self.assertEqual(pollutant, expected)
+
+        # raise on invalid
+        with self.assertRaises(ValueError):
+            pollutant, _, _ = _process_sos_kwargs('invalid')
+
+        # list of strings
+        pollutant, _, _ = _process_sos_kwargs(pollutant=['bc', 'no2'])
+        expected = ['16111 - Black Carbon', '42602 - NO2']
+        self.assertEqual(pollutant, expected)
