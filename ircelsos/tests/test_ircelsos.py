@@ -3,6 +3,10 @@ from __future__ import print_function, division
 
 import unittest
 
+import pandas as pd
+from pandas.util.testing import assert_frame_equal
+
+import ircelsos
 from ircelsos.query_ircelsos import query_ircelsos
 from ircelsos.parser import get_observations, parse_observation
 
@@ -39,3 +43,18 @@ class TestQuery(unittest.TestCase):
         with self.assertRaises(ValueError):
             query_ircelsos('bc', utc_start='2012-01-01T01:00:00',
                            utc_end='2012-01-01T09:00:00:00')
+
+    def test_query(self):
+
+        df = ircelsos.query(pollutant='o3', station='BETN060',
+                            utc_start='2015-03-27T00:00:00',
+                            utc_end='2015-03-27T3:00:00')
+
+        expected = pd.DataFrame({'BETN060':
+                                 {'2015-03-27T01:00:00.000+01:00': 48.0,
+                                  '2015-03-27T02:00:00.000+01:00': 51.0,
+                                  '2015-03-27T03:00:00.000+01:00': 52.0,
+                                  '2015-03-27T04:00:00.000+01:00': 47.5}})
+        expected.index.name = 'time'
+
+        assert_frame_equal(df, expected)

@@ -20,11 +20,18 @@ except ImportError:
 
 def query(pollutant, station=None, utc_start=None, utc_end=None):
     """
-    Download air quality data from IRCEL-CELINE
+    Download air quality data from IRCEL-CELINE.
 
+    Parameters
+    ----------
+    pollutant : str
+    station : str or list of str
+    utc_start
+    utc_end
 
-
-
+    Returns
+    -------
+    pandas DataFrame
 
     """
 
