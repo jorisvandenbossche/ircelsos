@@ -11,6 +11,8 @@ import dateutil
 import six
 
 from . import SOS
+from ._stations import STATIONS
+
 
 POLLUTANTS = list(SOS.contents.keys())
 
@@ -21,6 +23,8 @@ SAROAD_CODE = {'o3': '44201 - O3',
                'so2': '42401 - SO2',
                'co': '42101 - CO',
                'bc': '16111 - Black Carbon'}
+
+STATION_LOCAL_CODES = {STATIONS[code]['name']: STATIONS[code]['id'] for code in STATIONS}
 
 
 def _check_date(date):
@@ -82,7 +86,10 @@ def _process_sos_kwargs(pollutant=None, station=None, utc_start=None,
 
     # check station
     if isinstance(station, list):
+        station = [STATION_LOCAL_CODES.get(st, st) for st in station]
         station = ','.join(station)
+    else:
+        station = STATION_LOCAL_CODES.get(station, station)
 
     # check start and end
     period = _check_start_end(utc_start, utc_end)

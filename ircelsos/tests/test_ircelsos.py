@@ -70,6 +70,17 @@ class TestQuery(unittest.TestCase):
         expected = 'BETR801,BETR802'
         self.assertEqual(station, expected)
 
+        # local code
+        _, station, _ = _process_sos_kwargs('bc', station='42R801')
+        expected = 'BETR801'
+        self.assertEqual(station, expected)
+
+        # list of local codes
+        _, station, _ = _process_sos_kwargs('bc',
+                                            station=['42R801', '42R802'])
+        expected = 'BETR801,BETR802'
+        self.assertEqual(station, expected)
+
     def test_pollutant_parsing(self):
 
         from ircelsos.query_ircelsos import _process_sos_kwargs
