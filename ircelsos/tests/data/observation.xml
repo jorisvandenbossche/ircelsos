@@ -1,0 +1,1896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sa="http://www.opengis.net/sampling/1.0" xmlns:swe="http://www.opengis.net/swe/1.0.1" gml:id="oc_1443275652199" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/extensions/observationSpecialization_constraint.xsd http://www.opengis.net/sampling/1.0 http://schemas.opengis.net/sampling/1.0.0/sampling.xsd">
+  <gml:boundedBy>
+    <gml:Envelope srsName="urn:ogc:def:crs:EPSG::31370">
+      <gml:lowerCorner>24655.0 46070.0</gml:lowerCorner>
+      <gml:upperCorner>266325.0 226558.0</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <om:member>
+    <om:Observation gml:id="go_1443275652199">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="7033"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETM705">
+        <sa:SamplingPoint gml:id="BETM705">
+          <gml:description>suburban - Industrial</gml:description>
+          <gml:name>44M705 - ROESELARE</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_1">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">64521.0 182374.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,67.5;2015-03-27T02:00:00.000+01:00,65.5;2015-03-27T03:00:00.000+01:00,64.5;2015-03-27T04:00:00.000+01:00,65.0;2015-03-27T05:00:00.000+01:00,62.5;2015-03-27T06:00:00.000+01:00,57.0;2015-03-27T07:00:00.000+01:00,32.5;2015-03-27T08:00:00.000+01:00,25.0;2015-03-27T09:00:00.000+01:00,37.5;2015-03-27T10:00:00.000+01:00,59.0;2015-03-27T11:00:00.000+01:00,65.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652200">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6744"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN046">
+        <sa:SamplingPoint gml:id="BETN046">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>42N046 - GELLIK</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_2">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">237970.0 175401.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,50.5;2015-03-27T02:00:00.000+01:00,53.0;2015-03-27T03:00:00.000+01:00,55.5;2015-03-27T04:00:00.000+01:00,55.0;2015-03-27T05:00:00.000+01:00,53.0;2015-03-27T06:00:00.000+01:00,48.0;2015-03-27T07:00:00.000+01:00,48.5;2015-03-27T08:00:00.000+01:00,46.5;2015-03-27T09:00:00.000+01:00,46.0;2015-03-27T10:00:00.000+01:00,52.5;2015-03-27T11:00:00.000+01:00,56.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652200">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T08:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="7078"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETR701">
+        <sa:SamplingPoint gml:id="BETR701">
+          <gml:description>urban - Background</gml:description>
+          <gml:name>44R701 - GENT</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_3">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">105169.0 194435.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>8</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,43.5;2015-03-27T02:00:00.000+01:00,52.5;2015-03-27T03:00:00.000+01:00,54.0;2015-03-27T04:00:00.000+01:00,50.5;2015-03-27T05:00:00.000+01:00,46.0;2015-03-27T06:00:00.000+01:00,33.5;2015-03-27T07:00:00.000+01:00,20.5;2015-03-27T08:00:00.000+01:00,14.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652201">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6711"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN027">
+        <sa:SamplingPoint gml:id="BETN027">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>42N027 - BREE</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_4">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">236644.0 203352.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,41.5;2015-03-27T02:00:00.000+01:00,50.5;2015-03-27T03:00:00.000+01:00,52.5;2015-03-27T04:00:00.000+01:00,49.0;2015-03-27T05:00:00.000+01:00,46.0;2015-03-27T06:00:00.000+01:00,45.0;2015-03-27T07:00:00.000+01:00,44.5;2015-03-27T08:00:00.000+01:00,42.5;2015-03-27T09:00:00.000+01:00,45.5;2015-03-27T10:00:00.000+01:00,51.5;2015-03-27T11:00:00.000+01:00,49.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652201">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="7142"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETR502">
+        <sa:SamplingPoint gml:id="BETR502">
+          <gml:description>suburban - Background</gml:description>
+          <gml:name>45R502 - LODELINSART</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_5">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">156390.0 124240.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,10.5;2015-03-27T02:00:00.000+01:00,30.0;2015-03-27T03:00:00.000+01:00,24.0;2015-03-27T04:00:00.000+01:00,31.0;2015-03-27T05:00:00.000+01:00,21.0;2015-03-27T06:00:00.000+01:00,10.5;2015-03-27T07:00:00.000+01:00,8.5;2015-03-27T08:00:00.000+01:00,6.5;2015-03-27T09:00:00.000+01:00,23.0;2015-03-27T10:00:00.000+01:00,35.0;2015-03-27T11:00:00.000+01:00,39.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652202">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6719"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN040">
+        <sa:SamplingPoint gml:id="BETN040">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>42N040 - ST.P.LEEUWG</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_6">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">139873.0 161970.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,61.5;2015-03-27T02:00:00.000+01:00,62.5;2015-03-27T03:00:00.000+01:00,62.0;2015-03-27T04:00:00.000+01:00,58.5;2015-03-27T05:00:00.000+01:00,56.5;2015-03-27T06:00:00.000+01:00,55.0;2015-03-27T07:00:00.000+01:00,52.5;2015-03-27T08:00:00.000+01:00,46.0;2015-03-27T09:00:00.000+01:00,47.5;2015-03-27T10:00:00.000+01:00,58.0;2015-03-27T11:00:00.000+01:00,59.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652202">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6715"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN035">
+        <sa:SamplingPoint gml:id="BETN035">
+          <gml:description>suburban - Background</gml:description>
+          <gml:name>42N035 - AARSCHOT</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_7">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">182928.0 185359.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,58.0;2015-03-27T02:00:00.000+01:00,59.5;2015-03-27T03:00:00.000+01:00,59.5;2015-03-27T04:00:00.000+01:00,56.5;2015-03-27T05:00:00.000+01:00,53.5;2015-03-27T06:00:00.000+01:00,49.5;2015-03-27T07:00:00.000+01:00,45.0;2015-03-27T08:00:00.000+01:00,42.5;2015-03-27T09:00:00.000+01:00,45.5;2015-03-27T10:00:00.000+01:00,52.5;2015-03-27T11:00:00.000+01:00,54.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652202">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6517"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETB006">
+        <sa:SamplingPoint gml:id="BETB006">
+          <gml:description>urban - Background</gml:description>
+          <gml:name>41B006 - PARL.EUROPE</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_8">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">150397.0 169802.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,50.5;2015-03-27T02:00:00.000+01:00,55.0;2015-03-27T03:00:00.000+01:00,56.0;2015-03-27T04:00:00.000+01:00,52.0;2015-03-27T05:00:00.000+01:00,44.5;2015-03-27T06:00:00.000+01:00,34.5;2015-03-27T07:00:00.000+01:00,26.0;2015-03-27T08:00:00.000+01:00,20.5;2015-03-27T09:00:00.000+01:00,24.0;2015-03-27T10:00:00.000+01:00,41.0;2015-03-27T11:00:00.000+01:00,42.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652203">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6530"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETB011">
+        <sa:SamplingPoint gml:id="BETB011">
+          <gml:description>suburban - Background</gml:description>
+          <gml:name>41B011 - BERCHEM S.A</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_9">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">144338.0 171963.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,61.5;2015-03-27T02:00:00.000+01:00,63.5;2015-03-27T03:00:00.000+01:00,63.5;2015-03-27T04:00:00.000+01:00,58.5;2015-03-27T05:00:00.000+01:00,57.0;2015-03-27T06:00:00.000+01:00,52.5;2015-03-27T07:00:00.000+01:00,45.0;2015-03-27T08:00:00.000+01:00,43.5;2015-03-27T09:00:00.000+01:00,47.0;2015-03-27T10:00:00.000+01:00,56.5;2015-03-27T11:00:00.000+01:00,58.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652203">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6853"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETR841">
+        <sa:SamplingPoint gml:id="BETR841">
+          <gml:description>suburban - Background</gml:description>
+          <gml:name>42R841 - MECHELEN</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_10">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">157059.0 188039.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,51.5;2015-03-27T02:00:00.000+01:00,52.0;2015-03-27T03:00:00.000+01:00,53.5;2015-03-27T04:00:00.000+01:00,49.5;2015-03-27T05:00:00.000+01:00,42.5;2015-03-27T06:00:00.000+01:00,36.0;2015-03-27T07:00:00.000+01:00,23.0;2015-03-27T08:00:00.000+01:00,22.5;2015-03-27T09:00:00.000+01:00,36.5;2015-03-27T10:00:00.000+01:00,41.0;2015-03-27T11:00:00.000+01:00,47.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652204">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6918"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN070">
+        <sa:SamplingPoint gml:id="BETN070">
+          <gml:description>suburban - Background</gml:description>
+          <gml:name>43N070 - MONS</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_11">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">119540.0 128350.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,7.0;2015-03-27T02:00:00.000+01:00,15.5;2015-03-27T03:00:00.000+01:00,28.5;2015-03-27T04:00:00.000+01:00,28.5;2015-03-27T05:00:00.000+01:00,19.5;2015-03-27T06:00:00.000+01:00,8.0;2015-03-27T07:00:00.000+01:00,1.5;2015-03-27T08:00:00.000+01:00,3.0;2015-03-27T09:00:00.000+01:00,17.5;2015-03-27T10:00:00.000+01:00,33.0;2015-03-27T11:00:00.000+01:00,46.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652204">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6956"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN113">
+        <sa:SamplingPoint gml:id="BETN113">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>43N113 - SAINT-ODE</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_12">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">237720.0 80250.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,52.5;2015-03-27T02:00:00.000+01:00,53.5;2015-03-27T03:00:00.000+01:00,59.5;2015-03-27T04:00:00.000+01:00,58.5;2015-03-27T05:00:00.000+01:00,56.5;2015-03-27T06:00:00.000+01:00,55.5;2015-03-27T07:00:00.000+01:00,54.0;2015-03-27T08:00:00.000+01:00,56.0;2015-03-27T09:00:00.000+01:00,58.0;2015-03-27T10:00:00.000+01:00,61.0;2015-03-27T11:00:00.000+01:00,64.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652205">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6793"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETR811">
+        <sa:SamplingPoint gml:id="BETR811">
+          <gml:description>suburban - Background</gml:description>
+          <gml:name>42R811 - SCHOTEN</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_13">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">158560.0 215807.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,44.5;2015-03-27T02:00:00.000+01:00,37.5;2015-03-27T03:00:00.000+01:00,40.0;2015-03-27T04:00:00.000+01:00,38.5;2015-03-27T05:00:00.000+01:00,36.5;2015-03-27T06:00:00.000+01:00,33.5;2015-03-27T07:00:00.000+01:00,25.0;2015-03-27T08:00:00.000+01:00,21.0;2015-03-27T09:00:00.000+01:00,34.5;2015-03-27T10:00:00.000+01:00,48.0;2015-03-27T11:00:00.000+01:00,51.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652205">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="7041"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN012">
+        <sa:SamplingPoint gml:id="BETN012">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>44N012 - MOERKERKE</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_14">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">79753.0 216550.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,68.0;2015-03-27T02:00:00.000+01:00,67.0;2015-03-27T03:00:00.000+01:00,62.0;2015-03-27T04:00:00.000+01:00,65.5;2015-03-27T05:00:00.000+01:00,67.5;2015-03-27T06:00:00.000+01:00,66.0;2015-03-27T07:00:00.000+01:00,64.5;2015-03-27T08:00:00.000+01:00,63.0;2015-03-27T09:00:00.000+01:00,68.0;2015-03-27T10:00:00.000+01:00,68.5;2015-03-27T11:00:00.000+01:00,70.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652206">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6949"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN100">
+        <sa:SamplingPoint gml:id="BETN100">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>43N100 - DOURBES</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_15">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">166172.0 87187.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>10</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,54.0;2015-03-27T03:00:00.000+01:00,58.5;2015-03-27T04:00:00.000+01:00,60.0;2015-03-27T05:00:00.000+01:00,58.5;2015-03-27T06:00:00.000+01:00,55.5;2015-03-27T07:00:00.000+01:00,53.5;2015-03-27T08:00:00.000+01:00,52.0;2015-03-27T09:00:00.000+01:00,52.0;2015-03-27T10:00:00.000+01:00,58.5;2015-03-27T11:00:00.000+01:00,67.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652206">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6899"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN063">
+        <sa:SamplingPoint gml:id="BETN063">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>43N063 - CORROY L.G.</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_16">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">171181.0 149467.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,50.0;2015-03-27T02:00:00.000+01:00,58.0;2015-03-27T03:00:00.000+01:00,62.0;2015-03-27T04:00:00.000+01:00,58.0;2015-03-27T05:00:00.000+01:00,53.0;2015-03-27T06:00:00.000+01:00,53.0;2015-03-27T07:00:00.000+01:00,47.5;2015-03-27T08:00:00.000+01:00,44.5;2015-03-27T09:00:00.000+01:00,48.0;2015-03-27T10:00:00.000+01:00,57.5;2015-03-27T11:00:00.000+01:00,62.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652206">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6509"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETB004">
+        <sa:SamplingPoint gml:id="BETB004">
+          <gml:description>urban - Traffic</gml:description>
+          <gml:name>41B004 - STE.CATHERI</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_17">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">148580.0 171157.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,45.0;2015-03-27T02:00:00.000+01:00,48.5;2015-03-27T03:00:00.000+01:00,49.5;2015-03-27T04:00:00.000+01:00,45.5;2015-03-27T05:00:00.000+01:00,42.5;2015-03-27T06:00:00.000+01:00,29.0;2015-03-27T07:00:00.000+01:00,15.5;2015-03-27T08:00:00.000+01:00,11.5;2015-03-27T09:00:00.000+01:00,20.0;2015-03-27T10:00:00.000+01:00,38.0;2015-03-27T11:00:00.000+01:00,41.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652207">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6891"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN060">
+        <sa:SamplingPoint gml:id="BETN060">
+          <gml:description>unknown - Unknown</gml:description>
+          <gml:name>43N060 - HAVINNES</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_18">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">85521.0 145512.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,48.0;2015-03-27T02:00:00.000+01:00,51.0;2015-03-27T03:00:00.000+01:00,52.0;2015-03-27T04:00:00.000+01:00,47.5;2015-03-27T05:00:00.000+01:00,45.0;2015-03-27T06:00:00.000+01:00,40.5;2015-03-27T07:00:00.000+01:00,25.0;2015-03-27T08:00:00.000+01:00,17.0;2015-03-27T09:00:00.000+01:00,23.0;2015-03-27T10:00:00.000+01:00,42.5;2015-03-27T11:00:00.000+01:00,49.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652207">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="7115"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETR740">
+        <sa:SamplingPoint gml:id="BETR740">
+          <gml:description>rural - Industrial</gml:description>
+          <gml:name>44R740 - ST.KRUIS-WI</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_19">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">110815.0 204603.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,65.5;2015-03-27T02:00:00.000+01:00,63.0;2015-03-27T03:00:00.000+01:00,60.0;2015-03-27T04:00:00.000+01:00,54.5;2015-03-27T05:00:00.000+01:00,51.0;2015-03-27T06:00:00.000+01:00,46.5;2015-03-27T07:00:00.000+01:00,40.5;2015-03-27T08:00:00.000+01:00,43.0;2015-03-27T09:00:00.000+01:00,48.5;2015-03-27T10:00:00.000+01:00,61.0;2015-03-27T11:00:00.000+01:00,60.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652208">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6942"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN093">
+        <sa:SamplingPoint gml:id="BETN093">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>43N093 - SINSIN</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_20">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">211760.0 107410.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,42.5;2015-03-27T02:00:00.000+01:00,44.5;2015-03-27T03:00:00.000+01:00,48.0;2015-03-27T04:00:00.000+01:00,52.5;2015-03-27T05:00:00.000+01:00,50.5;2015-03-27T06:00:00.000+01:00,49.5;2015-03-27T07:00:00.000+01:00,44.5;2015-03-27T08:00:00.000+01:00,44.0;2015-03-27T09:00:00.000+01:00,48.0;2015-03-27T10:00:00.000+01:00,53.5;2015-03-27T11:00:00.000+01:00,58.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652208">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6703"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN016">
+        <sa:SamplingPoint gml:id="BETN016">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>42N016 - DESSEL</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_21">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">205542.0 214045.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,40.0;2015-03-27T02:00:00.000+01:00,46.5;2015-03-27T03:00:00.000+01:00,47.0;2015-03-27T04:00:00.000+01:00,38.0;2015-03-27T05:00:00.000+01:00,31.0;2015-03-27T06:00:00.000+01:00,18.5;2015-03-27T07:00:00.000+01:00,17.0;2015-03-27T08:00:00.000+01:00,19.0;2015-03-27T09:00:00.000+01:00,33.0;2015-03-27T10:00:00.000+01:00,46.0;2015-03-27T11:00:00.000+01:00,61.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652209">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6731"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN045">
+        <sa:SamplingPoint gml:id="BETN045">
+          <gml:description>suburban - Background</gml:description>
+          <gml:name>42N045 - HASSELT</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_22">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">220258.0 181520.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,51.5;2015-03-27T02:00:00.000+01:00,57.0;2015-03-27T03:00:00.000+01:00,58.0;2015-03-27T04:00:00.000+01:00,56.0;2015-03-27T05:00:00.000+01:00,53.0;2015-03-27T06:00:00.000+01:00,45.0;2015-03-27T07:00:00.000+01:00,37.0;2015-03-27T08:00:00.000+01:00,36.0;2015-03-27T09:00:00.000+01:00,39.0;2015-03-27T10:00:00.000+01:00,46.0;2015-03-27T11:00:00.000+01:00,47.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652209">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6642"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETWOL1">
+        <sa:SamplingPoint gml:id="BETWOL1">
+          <gml:description>suburban - Traffic</gml:description>
+          <gml:name>41WOL1 - WOL.ST.L.</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_23">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">154010.0 171800.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,47.5;2015-03-27T02:00:00.000+01:00,50.5;2015-03-27T03:00:00.000+01:00,51.0;2015-03-27T04:00:00.000+01:00,48.5;2015-03-27T05:00:00.000+01:00,44.0;2015-03-27T06:00:00.000+01:00,34.5;2015-03-27T07:00:00.000+01:00,20.5;2015-03-27T08:00:00.000+01:00,10.0;2015-03-27T09:00:00.000+01:00,16.0;2015-03-27T10:00:00.000+01:00,29.5;2015-03-27T11:00:00.000+01:00,34.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652210">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6935"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN085">
+        <sa:SamplingPoint gml:id="BETN085">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>43N085 - VIELSALM</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_24">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">266325.0 111525.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,44.5;2015-03-27T02:00:00.000+01:00,39.5;2015-03-27T03:00:00.000+01:00,40.0;2015-03-27T04:00:00.000+01:00,42.0;2015-03-27T05:00:00.000+01:00,38.5;2015-03-27T06:00:00.000+01:00,42.0;2015-03-27T07:00:00.000+01:00,41.5;2015-03-27T08:00:00.000+01:00,44.5;2015-03-27T09:00:00.000+01:00,46.0;2015-03-27T10:00:00.000+01:00,50.0;2015-03-27T11:00:00.000+01:00,48.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652210">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="7091"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETR710">
+        <sa:SamplingPoint gml:id="BETR710">
+          <gml:description>suburban - Background</gml:description>
+          <gml:name>44R710 - DESTELBERGE</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_25">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">108394.0 194736.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,48.5;2015-03-27T02:00:00.000+01:00,60.0;2015-03-27T03:00:00.000+01:00,59.0;2015-03-27T04:00:00.000+01:00,58.0;2015-03-27T05:00:00.000+01:00,53.0;2015-03-27T06:00:00.000+01:00,46.0;2015-03-27T07:00:00.000+01:00,38.5;2015-03-27T08:00:00.000+01:00,31.5;2015-03-27T09:00:00.000+01:00,33.0;2015-03-27T10:00:00.000+01:00,47.0;2015-03-27T11:00:00.000+01:00,63.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652238">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6625"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETR012">
+        <sa:SamplingPoint gml:id="BETR012">
+          <gml:description>suburban - Background</gml:description>
+          <gml:name>41R012 - UCCLE</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_26">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">149280.0 165130.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,52.0;2015-03-27T02:00:00.000+01:00,57.5;2015-03-27T03:00:00.000+01:00,60.0;2015-03-27T04:00:00.000+01:00,57.0;2015-03-27T05:00:00.000+01:00,54.0;2015-03-27T06:00:00.000+01:00,50.0;2015-03-27T07:00:00.000+01:00,38.5;2015-03-27T08:00:00.000+01:00,26.5;2015-03-27T09:00:00.000+01:00,38.5;2015-03-27T10:00:00.000+01:00,52.0;2015-03-27T11:00:00.000+01:00,57.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652238">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6577"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETR001">
+        <sa:SamplingPoint gml:id="BETR001">
+          <gml:description>urban - Traffic</gml:description>
+          <gml:name>41R001 - MOLENBEEK</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_27">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">147540.0 171030.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>10</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,50.5;2015-03-27T03:00:00.000+01:00,55.0;2015-03-27T04:00:00.000+01:00,54.5;2015-03-27T05:00:00.000+01:00,47.0;2015-03-27T06:00:00.000+01:00,31.0;2015-03-27T07:00:00.000+01:00,17.5;2015-03-27T08:00:00.000+01:00,19.5;2015-03-27T09:00:00.000+01:00,27.0;2015-03-27T10:00:00.000+01:00,48.0;2015-03-27T11:00:00.000+01:00,51.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652239">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6562"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN043">
+        <sa:SamplingPoint gml:id="BETN043">
+          <gml:description>suburban - Industrial</gml:description>
+          <gml:name>41N043 - HAREN</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_28">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">151000.0 174800.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,47.5;2015-03-27T02:00:00.000+01:00,50.5;2015-03-27T03:00:00.000+01:00,51.5;2015-03-27T04:00:00.000+01:00,46.5;2015-03-27T05:00:00.000+01:00,36.5;2015-03-27T06:00:00.000+01:00,29.0;2015-03-27T07:00:00.000+01:00,16.5;2015-03-27T08:00:00.000+01:00,12.0;2015-03-27T09:00:00.000+01:00,18.5;2015-03-27T10:00:00.000+01:00,31.0;2015-03-27T11:00:00.000+01:00,39.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652239">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="7068"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN052">
+        <sa:SamplingPoint gml:id="BETN052">
+          <gml:description>suburban - Background</gml:description>
+          <gml:name>44N052 - ZWEVEGEM</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_29">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">76269.0 167678.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,60.5;2015-03-27T02:00:00.000+01:00,53.0;2015-03-27T03:00:00.000+01:00,55.0;2015-03-27T04:00:00.000+01:00,53.5;2015-03-27T05:00:00.000+01:00,45.0;2015-03-27T06:00:00.000+01:00,33.5;2015-03-27T07:00:00.000+01:00,19.5;2015-03-27T08:00:00.000+01:00,17.5;2015-03-27T09:00:00.000+01:00,28.0;2015-03-27T10:00:00.000+01:00,43.5;2015-03-27T11:00:00.000+01:00,53.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652240">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6778"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETR801">
+        <sa:SamplingPoint gml:id="BETR801">
+          <gml:description>urban - Traffic</gml:description>
+          <gml:name>42R801 - BORGERHOUT</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_30">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">154407.0 211080.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,45.0;2015-03-27T02:00:00.000+01:00,43.5;2015-03-27T03:00:00.000+01:00,43.0;2015-03-27T04:00:00.000+01:00,36.5;2015-03-27T05:00:00.000+01:00,38.5;2015-03-27T06:00:00.000+01:00,32.5;2015-03-27T07:00:00.000+01:00,21.0;2015-03-27T08:00:00.000+01:00,17.5;2015-03-27T09:00:00.000+01:00,25.5;2015-03-27T10:00:00.000+01:00,40.0;2015-03-27T11:00:00.000+01:00,46.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652240">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="7064"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN051">
+        <sa:SamplingPoint gml:id="BETN051">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>44N051 - IDEGEM</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_31">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">119090.0 165475.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,60.5;2015-03-27T02:00:00.000+01:00,64.0;2015-03-27T03:00:00.000+01:00,60.0;2015-03-27T04:00:00.000+01:00,56.5;2015-03-27T05:00:00.000+01:00,52.0;2015-03-27T06:00:00.000+01:00,50.0;2015-03-27T07:00:00.000+01:00,49.5;2015-03-27T08:00:00.000+01:00,44.0;2015-03-27T09:00:00.000+01:00,49.0;2015-03-27T10:00:00.000+01:00,57.5;2015-03-27T11:00:00.000+01:00,61.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652241">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="7048"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN029">
+        <sa:SamplingPoint gml:id="BETN029">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>44N029 - HOUTEM</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_32">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">24655.0 191071.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,71.0;2015-03-27T02:00:00.000+01:00,69.0;2015-03-27T03:00:00.000+01:00,67.5;2015-03-27T04:00:00.000+01:00,66.0;2015-03-27T05:00:00.000+01:00,68.5;2015-03-27T06:00:00.000+01:00,67.0;2015-03-27T07:00:00.000+01:00,61.0;2015-03-27T08:00:00.000+01:00,68.5;2015-03-27T09:00:00.000+01:00,71.0;2015-03-27T10:00:00.000+01:00,72.5;2015-03-27T11:00:00.000+01:00,71.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652241">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T10:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6969"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN132">
+        <sa:SamplingPoint gml:id="BETN132">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>43N132 - HABAY-LA-N.</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_33">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">240980.0 46070.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>10</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,33.5;2015-03-27T02:00:00.000+01:00,40.5;2015-03-27T03:00:00.000+01:00,39.5;2015-03-27T04:00:00.000+01:00,39.5;2015-03-27T05:00:00.000+01:00,34.0;2015-03-27T06:00:00.000+01:00,32.0;2015-03-27T07:00:00.000+01:00,10.5;2015-03-27T08:00:00.000+01:00,19.0;2015-03-27T09:00:00.000+01:00,33.5;2015-03-27T10:00:00.000+01:00,56.5;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652242">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6925"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN073">
+        <sa:SamplingPoint gml:id="BETN073">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>43N073 - VEZIN</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_34">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">193960.0 132620.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,29.0;2015-03-27T02:00:00.000+01:00,32.5;2015-03-27T03:00:00.000+01:00,42.5;2015-03-27T04:00:00.000+01:00,44.0;2015-03-27T05:00:00.000+01:00,46.0;2015-03-27T06:00:00.000+01:00,43.0;2015-03-27T07:00:00.000+01:00,34.5;2015-03-27T08:00:00.000+01:00,35.0;2015-03-27T09:00:00.000+01:00,37.5;2015-03-27T10:00:00.000+01:00,49.0;2015-03-27T11:00:00.000+01:00,57.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652242">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6748"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN054">
+        <sa:SamplingPoint gml:id="BETN054">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>42N054 - WALSHOUTEM</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_35">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">201869.0 155940.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,48.5;2015-03-27T02:00:00.000+01:00,50.5;2015-03-27T03:00:00.000+01:00,53.0;2015-03-27T04:00:00.000+01:00,55.5;2015-03-27T05:00:00.000+01:00,52.0;2015-03-27T06:00:00.000+01:00,43.5;2015-03-27T07:00:00.000+01:00,38.5;2015-03-27T08:00:00.000+01:00,37.5;2015-03-27T09:00:00.000+01:00,44.5;2015-03-27T10:00:00.000+01:00,52.5;2015-03-27T11:00:00.000+01:00,57.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652242">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6832"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETR831">
+        <sa:SamplingPoint gml:id="BETR831">
+          <gml:description>suburban - Industrial</gml:description>
+          <gml:name>42R831 - BERENDRECHT</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_36">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">147976.0 226558.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>11</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,51.0;2015-03-27T02:00:00.000+01:00,51.0;2015-03-27T03:00:00.000+01:00,46.5;2015-03-27T04:00:00.000+01:00,41.0;2015-03-27T05:00:00.000+01:00,40.0;2015-03-27T06:00:00.000+01:00,41.0;2015-03-27T07:00:00.000+01:00,36.0;2015-03-27T08:00:00.000+01:00,39.0;2015-03-27T09:00:00.000+01:00,47.5;2015-03-27T10:00:00.000+01:00,53.5;2015-03-27T11:00:00.000+01:00,59.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+  <om:member>
+    <om:Observation gml:id="go_1443275652243">
+      <om:samplingTime>
+        <gml:TimePeriod xsi:type="gml:TimePeriodType">
+          <gml:beginPosition>2015-03-27T01:00:00.000+01:00</gml:beginPosition>
+          <gml:endPosition>2015-03-27T11:00:00.000+01:00</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure xlink:href="6962"/>
+      <om:observedProperty xlink:href="44201 - O3"/>
+      <om:featureOfInterest xlink:title="BETN121">
+        <sa:SamplingPoint gml:id="BETN121">
+          <gml:description>rural - Background</gml:description>
+          <gml:name>43N121 - OFFAGNE</gml:name>
+          <sa:sampledFeature xlink:href="urn:ogc:def:nil:OGC:unknown"/>
+          <sa:position>
+            <gml:Point gml:id="point_sf_37">
+              <gml:pos srsName="urn:ogc:def:crs:EPSG::31370">209920.0 63190.0</gml:pos>
+            </gml:Point>
+          </sa:position>
+        </sa:SamplingPoint>
+      </om:featureOfInterest>
+      <om:result>
+        <swe:DataArray>
+          <swe:elementCount>
+            <swe:Count>
+              <swe:value>10</swe:value>
+            </swe:Count>
+          </swe:elementCount>
+          <swe:elementType name="Components">
+            <swe:DataRecord>
+              <swe:field name="SamplingTime">
+                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                  <swe:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                </swe:Time>
+              </swe:field>
+              <swe:field name="44201 - O3">
+                <swe:Quantity definition="44201 - O3">
+                  <swe:uom code="Default: ug/m3"/>
+                </swe:Quantity>
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:encoding>
+            <swe:TextBlock decimalSeparator="." tokenSeparator="," blockSeparator=";"/>
+          </swe:encoding>
+          <swe:values>2015-03-27T01:00:00.000+01:00,50.0;2015-03-27T02:00:00.000+01:00,46.5;2015-03-27T03:00:00.000+01:00,51.5;2015-03-27T04:00:00.000+01:00,51.0;2015-03-27T05:00:00.000+01:00,50.0;2015-03-27T06:00:00.000+01:00,50.0;2015-03-27T07:00:00.000+01:00,51.5;2015-03-27T09:00:00.000+01:00,53.5;2015-03-27T10:00:00.000+01:00,59.0;2015-03-27T11:00:00.000+01:00,65.0;</swe:values>
+        </swe:DataArray>
+      </om:result>
+    </om:Observation>
+  </om:member>
+</om:ObservationCollection>
