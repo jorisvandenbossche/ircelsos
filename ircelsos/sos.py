@@ -9,7 +9,10 @@ from __future__ import print_function
 from owslib.sos import SensorObservationService
 
 
+BASE_URL = 'http://sos.irceline.be/sos'
+
+
 def get_sos():
     """Return a SensorObservationService instance"""
 
-    return SensorObservationService("http://sos.irceline.be/sos")
+    return SensorObservationService(BASE_URL)
