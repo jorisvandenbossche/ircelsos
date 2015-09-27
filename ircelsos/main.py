@@ -18,7 +18,8 @@ def main():
                         help='Station number. If no provided, use all available'
                         ' stations for that pollutant')
     parser.add_argument('--period', '-p', type=str, nargs=2,
-                        help='Period of the measurements given as "start stop"')
+                        help='Period of the measurements given as "start stop"'
+                        '. If not provided, download entire available period')
     args = parser.parse_args()
 
     from .query_ircelsos import query_ircelsos
@@ -32,8 +33,14 @@ def main():
         station = args.station[0]
     else:
         station = None
-    response = query_ircelsos(pollutant, station, args.period[0],
-                              args.period[1])
+
+    if args.period is None:
+        start = None
+        end = None
+    else:
+        start, end = args.period
+
+    response = query_ircelsos(pollutant, station, start, end)
     observations = get_observations(response)
     if not observations:
         print('No observations found')
