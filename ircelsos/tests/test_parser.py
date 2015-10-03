@@ -31,13 +31,17 @@ class TestParser(unittest.TestCase):
         obs = get_observations(self.obs_xml)
         obs1 = obs[0]
 
-        st_info, raw_data = parse_observation(obs1)
+        obs_info, raw_data = parse_observation(obs1)
 
-        expected = {'description': 'suburban - Industrial',
-                    'id': 'BETM705',
-                    'long_name': '44M705 - ROESELARE',
-                    'name': '44M705'}
-        self.assertDictEqual(st_info, expected)
+        expected = {'sampling_time':
+                    ['2015-03-27T01:00:00.000+01:00',
+                     '2015-03-27T11:00:00.000+01:00'],
+                    'feature_of_interest':
+                    {'description': 'suburban - Industrial',
+                     'id': 'BETM705',
+                     'long_name': '44M705 - ROESELARE',
+                     'name': '44M705'}}
+        self.assertDictEqual(obs_info, expected)
 
         raw_data_expected = '2015-03-27T01:00:00.000+01:00,67.5;2015-03-27T02:00:00.000+01:00,65.5;2015-03-27T03:00:00.000+01:00,64.5;2015-03-27T04:00:00.000+01:00,65.0;2015-03-27T05:00:00.000+01:00,62.5;2015-03-27T06:00:00.000+01:00,57.0;2015-03-27T07:00:00.000+01:00,32.5;2015-03-27T08:00:00.000+01:00,25.0;2015-03-27T09:00:00.000+01:00,37.5;2015-03-27T10:00:00.000+01:00,59.0;2015-03-27T11:00:00.000+01:00,65.5;'
         self.assertEqual(raw_data, raw_data_expected)

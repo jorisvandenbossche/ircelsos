@@ -6,6 +6,9 @@ Created on Wed Apr 07 23:11:39 2015
 """
 from __future__ import print_function
 
+from dateutil.parser import parse
+
+
 def main():
     import argparse
     parser = argparse.ArgumentParser(
@@ -48,9 +51,12 @@ def main():
         sys.exit()
 
     for obs in observations:
-        st_info, raw_data = parse_observation(obs)
+        obs_info, raw_data = parse_observation(obs)
 
-        filename = '{0}_{1}.csv'.format(pollutant, st_info['name'])
+        filename = '{0}_{1}_{2}_{3}.csv'.format(
+            pollutant, obs_info['feature_of_interest']['name'],
+            parse(obs_info['sampling_time'][0]).strftime('%Y%m%d'),
+            parse(obs_info['sampling_time'][1]).strftime('%Y%m%d'))
         print("Writing file '{}'".format(filename))
-        with open(filename, 'w') as f:
-            f.writelines(raw_data.replace(';', '\n'))
+        with open(filename, 'w') as outfile:
+            outfile.writelines(raw_data.replace(';', '\n'))

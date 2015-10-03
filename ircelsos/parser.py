@@ -59,6 +59,16 @@ def parse_observation(obs):
 
     assert obs.tag == '{http://www.opengis.net/om/1.0}Observation'
 
+    obs_info = {}
+
+    ## decode the sampling time
+
+    samplingtime = obs.findall('{http://www.opengis.net/om/1.0}samplingTime')
+    period = samplingtime[0].find('{http://www.opengis.net/gml}TimePeriod')
+    begin = period.find('{http://www.opengis.net/gml}beginPosition').text
+    end = period.find('{http://www.opengis.net/gml}endPosition').text
+    obs_info['sampling_time'] = [begin, end]
+
     ## decode the feature information
 
     feat = obs.findall('{http://www.opengis.net/om/1.0}featureOfInterest')
@@ -82,6 +92,8 @@ def parse_observation(obs):
     except:
         raise
 
+    obs_info['feature_of_interest'] = st_info
+
     ## decode the data array values
 
     result = obs.findall('{http://www.opengis.net/om/1.0}result')
@@ -100,7 +112,7 @@ def parse_observation(obs):
 
     raw_data = values[0].text
 
-    return st_info, raw_data
+    return obs_info, raw_data
 
 #st_info, raw_data = parse_observation(obs)
 #
