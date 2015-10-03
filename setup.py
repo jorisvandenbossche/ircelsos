@@ -14,7 +14,7 @@ setup(
     author_email='jorisvandenbossche@gmail.com',
     #license='MIT',
     packages=['ircelsos'],
-    install_requires=['owslib', 'six'],
+    install_requires=['owslib==0.9.0', 'six'],
     entry_points={
         'console_scripts': [
             'ircelsos=ircelsos.main:main',
