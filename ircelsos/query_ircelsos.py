@@ -11,20 +11,7 @@ import dateutil
 import six
 
 from . import SOS
-from ._stations import STATIONS
-
-
-POLLUTANTS = list(SOS.contents.keys())
-
-SAROAD_CODE = {'o3': '44201 - O3',
-               'no2': '42602 - NO2',
-               'pm10': '81102 - PM10',
-               'pm25': '81104 - PM2.5',
-               'so2': '42401 - SO2',
-               'co': '42101 - CO',
-               'bc': '16111 - Black Carbon'}
-
-STATION_LOCAL_CODES = {STATIONS[code]['name']: STATIONS[code]['id'] for code in STATIONS}
+from .metadata import STATIONS, POLLUTANTS, SAROAD_CODE, STATION_LOCAL_CODES
 
 
 def _check_date(date):
