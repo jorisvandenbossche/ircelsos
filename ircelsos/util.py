@@ -6,6 +6,7 @@ from __future__ import print_function
 
 import os
 import io
+from collections import namedtuple
 import xml.etree.ElementTree as ET
 import datetime
 import pprint
@@ -112,3 +113,53 @@ def _generate_stations_list():
             timestamp=datetime.datetime.today().replace(microsecond=0))
 
         stations_file.write(content)
+
+
+###############################################################################
+# Pretty table printing
+###############################################################################
+
+def pprinttable(rows):
+    """
+    Source: http://stackoverflow.com/questions/5909873/python-pretty-printing-ascii-tables/5910078#5910078
+    """
+    if len(rows) > 1:
+        headers = rows[0]._fields
+        lens = []
+        for i in range(len(rows[0])):
+            lens.append(len(max([x[i] for x in rows] + [headers[i]],key=lambda x:len(str(x.encode('UTF-8'))))))
+        formats = []
+        hformats = []
+        for i in range(len(rows[0])):
+            if isinstance(rows[0][i], int):
+                formats.append("%%%dd" % lens[i])
+            else:
+                formats.append("%%-%ds" % lens[i])
+            hformats.append("%%-%ds" % lens[i])
+        pattern = " | ".join(formats)
+        hpattern = " | ".join(hformats)
+        separator = "-+-".join(['-' * n for n in lens])
+        print hpattern % tuple(headers)
+        print separator
+        _u = lambda t: t.decode('UTF-8', 'replace') if isinstance(t, str) else t
+        for line in rows:
+            print pattern % tuple(_u(t) for t in line)
+    elif len(rows) == 1:
+        row = rows[0]
+        hwidth = len(max(row._fields,key=lambda x: len(x)))
+        for i in range(len(row)):
+            print "%*s = %s" % (hwidth,row._fields[i],row[i])
+
+
+def print_stations(stations=None):
+    Row = namedtuple('Row', ['name', 'id', 'description'])
+    rows = [Row(st['name'], st['id'], st['description'])
+            for (code, st) in stations.iteritems()]
+    pprinttable(sorted(rows))
+
+
+def print_pollutants(pollutants=None)
+    Row = namedtuple('Row', ['id', 'name'])
+    rows = [Row(pol['id'], pol['name'])
+            for (code, pol) in pollutants.iteritems()]
+    pprinttable(sorted(rows))
