@@ -8,8 +8,9 @@ from __future__ import print_function
 
 import sys
 import os
+from io import open
 import datetime
-from xml.etree import ElementTree
+from xml.etree.ElementTree import ElementTree
 
 import requests
 from owslib.sos import SensorObservationService
@@ -18,16 +19,17 @@ from owslib.sos import SensorObservationService
 BASE_URL = 'http://sos.irceline.be/sos'
 
 
-def get_sos():
+def get_sos(xml_file=None):
     """Return a SensorObservationService instance"""
 
-    data_dir = ircelsos_data_dir()
-    if not os.path.exists(data_dir):
-        os.makedirs(data_dir)
-    xml_file = os.path.join(data_dir, 'capabilities.xml')
+    if xml_file is None:
+        data_dir = ircelsos_data_dir()
+        if not os.path.exists(data_dir):
+            os.makedirs(data_dir)
+        xml_file = os.path.join(data_dir, 'capabilities.xml')
 
     if os.path.isfile(xml_file):
-        xml = file(xml_file).read()
+        xml = open(xml_file, 'rb').read()
         adapted = datetime.datetime.fromtimestamp(os.path.getmtime(xml_file))
         outdated = (datetime.datetime.now() - adapted) > datetime.timedelta(1)
     else:
@@ -42,8 +44,8 @@ def get_sos():
         except requests.ConnectionError:
             sos = SensorObservationService(BASE_URL, xml=xml)
         else:
-            with open(xml_file, 'w') as xml:
-                xml.write(ElementTree.tostring(sos._capabilities))
+            with open(xml_file, 'wb') as xml:
+                ElementTree(sos._capabilities).write(xml)
     return sos
 
 
