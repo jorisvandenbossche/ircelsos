@@ -4,12 +4,15 @@ from __future__ import print_function, division
 import unittest
 import datetime
 
+import pytest
+
 from ircelsos.query_ircelsos import query_ircelsos
 from ircelsos.parser import get_observations, parse_observation
 
 
 class TestQuery(unittest.TestCase):
 
+    @pytest.mark.network
     def test_query_and_parse(self):
 
         # small test example
