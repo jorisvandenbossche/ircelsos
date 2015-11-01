@@ -17,6 +17,7 @@ except ImportError:
     # Python 2
     from urllib import urlencode
 
+import six
 from owslib.util import openURL
 
 from .sos import BASE_URL
@@ -139,27 +140,27 @@ def pprinttable(rows):
         pattern = " | ".join(formats)
         hpattern = " | ".join(hformats)
         separator = "-+-".join(['-' * n for n in lens])
-        print hpattern % tuple(headers)
-        print separator
-        _u = lambda t: t.decode('UTF-8', 'replace') if isinstance(t, str) else t
+        print(hpattern % tuple(headers))
+        print(separator)
+        _u = lambda t: t.decode('UTF-8', 'replace') if isinstance(t, six.binary_type) else t
         for line in rows:
-            print pattern % tuple(_u(t) for t in line)
+            print(pattern % tuple(_u(t) for t in line))
     elif len(rows) == 1:
         row = rows[0]
         hwidth = len(max(row._fields,key=lambda x: len(x)))
         for i in range(len(row)):
-            print "%*s = %s" % (hwidth,row._fields[i],row[i])
+            print("%*s = %s" % (hwidth,row._fields[i],row[i]))
 
 
 def print_stations(stations=None):
     Row = namedtuple('Row', ['name', 'id', 'description'])
     rows = [Row(st['name'], st['id'], st['description'])
-            for (code, st) in stations.iteritems()]
+            for (code, st) in stations.items()]
     pprinttable(sorted(rows))
 
 
-def print_pollutants(pollutants=None)
+def print_pollutants(pollutants=None):
     Row = namedtuple('Row', ['id', 'name'])
     rows = [Row(pol['id'], pol['name'])
-            for (code, pol) in pollutants.iteritems()]
+            for (code, pol) in pollutants.items()]
     pprinttable(sorted(rows))
