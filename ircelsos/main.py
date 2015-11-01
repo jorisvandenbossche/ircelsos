@@ -14,16 +14,37 @@ def main():
     parser = argparse.ArgumentParser(
         prog='ircelsos',
         description='Download air quality data from the SOS of IRCEL - CELINE.')
+    subparsers = parser.add_subparsers(metavar='', dest='sub')
 
-    parser.add_argument('pollutant',
-                        help='The pollutant')
-    parser.add_argument('--station', '-s', nargs=1,
-                        help='Station number. If no provided, use all available'
-                        ' stations for that pollutant')
-    parser.add_argument('--period', '-p', type=str, nargs=2,
-                        help='Period of the measurements given as "start stop"'
-                        '. If not provided, download entire available period')
+    query_parser = subparsers.add_parser(
+        'query',
+        description='Download air quality data from the SOS of IRCEL - CELINE.',
+        help='Download air quality data')
+    query_parser.add_argument(
+        'pollutant', help='The pollutant')
+    query_parser.add_argument(
+        '--station', '-s', nargs=1,
+        help='Station number. If no provided, use all available stations '
+             'for that pollutant.')
+    query_parser.add_argument(
+        '--period', '-p', type=str, nargs=2, metavar=('START', 'STOP'),
+        help='Period of the measurements given as "start stop". If not '
+             'provided, download entire available period.')
+
+    info_parser = subparsers.add_parser(
+        'info',
+        description='Get information on stations and pollutants available in the SOS of IRCEL - CELINE.',
+        help='Get information on stations and pollutants')
+
     args = parser.parse_args()
+
+    if args.sub == 'query':
+        main_query(args)
+    elif args.sub == 'info':
+        main_info(args)
+
+
+def main_query(args):
 
     from .query_ircelsos import query_ircelsos
     from .parser import get_observations, parse_observation
@@ -60,3 +81,8 @@ def main():
         print("Writing file '{}'".format(filename))
         with open(filename, 'w') as outfile:
             outfile.writelines(raw_data.replace(';', '\n'))
+
+
+def main_info(args):
+
+    print("SOS of IRCEL - CELINE")
