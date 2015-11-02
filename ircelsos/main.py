@@ -35,6 +35,14 @@ def main():
         'info',
         description='Get information on stations and pollutants available in the SOS of IRCEL - CELINE.',
         help='Get information on stations and pollutants')
+    info_parser.add_argument(
+        '--station', nargs='?', const=True,
+        help='Show an overview of all stations. If station number is given, '
+             'show the detailed information for that station.')
+    info_parser.add_argument(
+        '--pollutant', nargs='?', const=True,
+        help='Show an overview of all pollutants. If a pollutant name is given'
+             ', show the detailed information for that pollutant.')
 
     args = parser.parse_args()
 
@@ -85,4 +93,11 @@ def main_query(args):
 
 def main_info(args):
 
-    print("SOS of IRCEL - CELINE")
+    from .util import print_stations, print_pollutants
+    from .metadata import STATIONS, POLLUTANTS
+    print("SOS of IRCEL - CELINE\n")
+
+    if args.station:
+        print_stations(STATIONS)
+    if args.pollutant:
+        print_pollutants(POLLUTANTS)
