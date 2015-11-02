@@ -37,12 +37,14 @@ def main():
         help='Get information on stations and pollutants')
     info_parser.add_argument(
         '--station', nargs='?', const=True,
-        help='Show an overview of all stations. If station number is given, '
-             'show the detailed information for that station.')
+        help='Show an overview of all stations. If station number is given '
+             '(as local or European code), show the detailed information for '
+             'that station.')
     info_parser.add_argument(
         '--pollutant', nargs='?', const=True,
         help='Show an overview of all pollutants. If a pollutant name is given'
-             ', show the detailed information for that pollutant.')
+             '(as short or long id), show the detailed information for that '
+             'pollutant.')
 
     args = parser.parse_args()
 
