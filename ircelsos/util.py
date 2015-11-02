@@ -22,6 +22,7 @@ from owslib.util import openURL
 
 from .sos import BASE_URL
 from . import SOS
+from . import metadata
 
 
 def get_feature_of_interest(feature_id):
@@ -153,14 +154,29 @@ def pprinttable(rows):
 
 
 def print_stations(stations=None):
-    Row = namedtuple('Row', ['name', 'id', 'description'])
-    rows = [Row(st['name'], st['id'], st['description'])
+
+    if stations is None:
+        stations = metadata.STATIONS
+    else:
+        stations = {st: metadata.STATIONS[st] for st in stations if st in metadata.STATIONS}
+
+    Row = namedtuple('Row', ['name', 'EU_code', 'location', 'region', 'type'])
+    rows = [Row(st['name'], st['id'], st['long_name'].split(' - ')[1],
+                *st['description'].split(' - '))
             for (code, st) in stations.items()]
     pprinttable(sorted(rows))
 
 
 def print_pollutants(pollutants=None):
-    Row = namedtuple('Row', ['id', 'name'])
-    rows = [Row(pol['id'], pol['name'])
+
+    if pollutants is None:
+        pollutants = metadata.POLLUTANTS
+    else:
+        pollutants = {pol: metadata.POLLUTANTS[pol] for pol in pollutants}
+
+    short_names = {val: key for (key, val) in metadata.SAROAD_CODE.items()}
+    Row = namedtuple('Row', ['id', 'short', 'name', 'stations'])
+    rows = [Row(pol['id'], short_names.get(pol['id'], ''), pol['name'],
+                str(len(pol['features_of_interest'])))
             for (code, pol) in pollutants.items()]
     pprinttable(sorted(rows))

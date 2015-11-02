@@ -94,10 +94,40 @@ def main_query(args):
 def main_info(args):
 
     from .util import print_stations, print_pollutants
-    from .metadata import STATIONS, POLLUTANTS
+    from .metadata import STATIONS, POLLUTANTS, SAROAD_CODE, STATION_LOCAL_CODES
     print("SOS of IRCEL - CELINE\n")
 
     if args.station:
-        print_stations(STATIONS)
+        if args.station is True:
+            # print all stations
+            print_stations()
+        else:
+            # print info of one station
+            if args.station in STATIONS:
+                st = args.station
+            elif args.station in STATION_LOCAL_CODES:
+                st = STATION_LOCAL_CODES[args.station]
+            else:
+                print('The station "{0}" is not found'.format(args.station))
+                st = False
+            if st:
+                print_stations([st])
+                print("\nThe following pollutants are measured at this station:\n")
+                print_pollutants(STATIONS[st]['offerings'])
     if args.pollutant:
-        print_pollutants(POLLUTANTS)
+        if args.pollutant is True:
+            # print all pollutants
+            print_pollutants()
+        else:
+            # print info of one pollutant
+            if args.pollutant in POLLUTANTS:
+                pol = args.pollutant
+            elif args.pollutant in SAROAD_CODE:
+                pol = SAROAD_CODE[args.pollutant]
+            else:
+                print('The pollutant "{0}" is not found'.format(args.pollutant))
+                pol = False
+            if pol:
+                print_pollutants([pol])
+                print("\nThis pollutant is measured at the following stations:\n")
+                print_stations(POLLUTANTS[pol]['features_of_interest'])

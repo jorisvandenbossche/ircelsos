@@ -21,25 +21,22 @@ class TestTablePrinting():
 
     def test_print_stations(self, capsys):
 
-        stations = {st: metadata.STATIONS[st] for st in ('BETR801', 'BETR802')}
-        print_stations(stations)
+        print_stations(['BETR801', 'BETR802'])
         out, err = capsys.readouterr()
-        expected = """name   | id      | description
--------+---------+----------------
-42R801 | BETR801 | urban - Traffic
-42R802 | BETR802 | urban - Traffic
+        expected = """name   | EU_code | location   | region | type
+-------+---------+------------+--------+--------
+42R801 | BETR801 | BORGERHOUT | urban  | Traffic
+42R802 | BETR802 | BORGERHOUT | urban  | Traffic
 """
         assert strip(out) == strip(expected)
 
     def test_print_pollutants(self, capsys):
 
-        pols = {pol: metadata.POLLUTANTS[pol] for pol in
-                    ('42602 - NO2', '44201 - O3')}
-        print_pollutants(pols)
+        print_pollutants(['42602 - NO2', '44201 - O3'])
         out, err = capsys.readouterr()
-        expected = """id          | name
-------------+-----------------
-42602 - NO2 | Nitrogen dioxide
-44201 - O3  | Ozone
+        expected = """id          | short | name             | stations
+------------+-------+------------------+---------
+42602 - NO2 | no2   | Nitrogen dioxide | 92
+44201 - O3  | o3    | Ozone            | 42
 """
         assert strip(out) == strip(expected)
