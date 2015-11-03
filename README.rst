@@ -8,9 +8,9 @@ Interregional Environment Agency (http://www.irceline.be).
 Installation
 ------------
 
-Installing (running from this directory)::
+Installing with pip::
 
-    pip install .
+    pip install ircelsos
 
 This will automatically install the dependency `OWSlib <https://github.com/geopython/OWSLib>`_.
 ircelsos supports python 2.7 and 3.3+. For python 3, OWSlib 9.0 or higher is needed.
