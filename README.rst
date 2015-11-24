@@ -4,11 +4,14 @@ ircelsos
 Downloading air quality data from the SOS of IRCEL - CELINE, the Belgian
 Interregional Environment Agency (http://www.irceline.be).
 
+This packages provides both a command line interface, as a python module
+that downloads the data as pandas DataFrames.
 
 Installation
 ------------
 
-Installing with pip::
+*ircelsos* is a Python package. If you have Python installed, *ircelsos* can
+easily be installed with pip::
 
     pip install ircelsos
 
@@ -80,6 +83,29 @@ Alternatively to the command line, you can also run the same script from
 the ``ircelsos`` directory::
 
     python -m ircelsos query ...
+
+
+Interactive usage (pandas)
+--------------------------
+
+To use the packages in an interactive python session, you need an extra
+dependency: `pandas <http://pandas.pydata.org/>`_.
+
+To download data as a pandas DataFrame, you can use the ``query`` function:
+
+.. code-block:: python
+
+    >>> import ircelsos
+    >>> df = ircelsos.query('no2', station=['42R801', '42R802'], utc_start='2015-11-15')
+    >>> df.head()
+                                   42R801  42R802
+    time
+    2015-11-24T01:00:00.000+01:00    27.0    28.5
+    2015-11-24T02:00:00.000+01:00    17.5    19.5
+    2015-11-24T03:00:00.000+01:00    16.0    16.5
+    2015-11-24T04:00:00.000+01:00    17.0    17.5
+    2015-11-24T05:00:00.000+01:00    24.0    24.5
+
 
 ----
 
