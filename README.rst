@@ -89,7 +89,11 @@ Interactive usage (pandas)
 --------------------------
 
 To use the packages in an interactive python session, you need an extra
-dependency: `pandas <http://pandas.pydata.org/>`_.
+dependency: `pandas <http://pandas.pydata.org/>`_ (to install pandas,
+it is recommended to use a scientific python distribution like
+`Anaconda <https://www.continuum.io/downloads>`_ or
+`Canopy <https://store.enthought.com/downloads/#default>`_
+that includes pandas).
 
 To download data as a pandas DataFrame, you can use the ``query`` function:
 
