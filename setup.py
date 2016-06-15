@@ -16,7 +16,7 @@ with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='ircelsos',
-    version='0.1.0',
+    version='0.2.0',
     description='Downloading air quality data from the SOS of IRCEL - CELINE',
     long_description=long_description,
     url='https://github.com/jorisvandenbossche/ircelsos',
