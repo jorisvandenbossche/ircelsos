@@ -36,7 +36,7 @@ class TestTablePrinting():
         out, err = capsys.readouterr()
         expected = """id          | short | name             | stations
 ------------+-------+------------------+---------
-42602 - NO2 | no2   | Nitrogen dioxide | 92
+42602 - NO2 | no2   | Nitrogen dioxide | 97
 44201 - O3  | o3    | Ozone            | 42
 """
         assert strip(out) == strip(expected)
