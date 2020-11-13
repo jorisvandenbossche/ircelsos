@@ -25,8 +25,8 @@ class TestTablePrinting():
         out, err = capsys.readouterr()
         expected = """name   | EU_code | location   | region | type
 -------+---------+------------+--------+--------
-42R801 | BETR801 | BORGERHOUT | urban  | Traffic
-42R802 | BETR802 | BORGERHOUT | urban  | Traffic
+42R801 | BETR801 | Borgerhout | urban  | Traffic
+42R802 | BETR802 | Borgerhout | urban  | Traffic
 """
         assert strip(out) == strip(expected)
 
@@ -36,7 +36,7 @@ class TestTablePrinting():
         out, err = capsys.readouterr()
         expected = """id          | short | name             | stations
 ------------+-------+------------------+---------
-42602 - NO2 | no2   | Nitrogen dioxide | 97
-44201 - O3  | o3    | Ozone            | 42
+42602 - NO2 | no2   | Nitrogen dioxide | 105
+44201 - O3  | o3    | Ozone            | 47
 """
         assert strip(out) == strip(expected)

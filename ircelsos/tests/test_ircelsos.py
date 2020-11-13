@@ -30,7 +30,7 @@ class TestQuery(unittest.TestCase):
                              'feature_of_interest':
                              {'description': 'unknown - Unknown',
                               'id': 'BETN060',
-                              'long_name': '43N060 - HAVINNES',
+                              'long_name': '43N060 - Havinnes',
                               'name': '43N060'}}
         self.assertDictEqual(obs_info, obs_info_expected)
 
