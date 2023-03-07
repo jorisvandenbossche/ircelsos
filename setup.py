@@ -24,7 +24,7 @@ setup(
     author_email='jorisvandenbossche@gmail.com',
     license='BSD',
     packages=['ircelsos'],
-    install_requires=['owslib==0.9.0', 'six'],
+    install_requires=['owslib==0.28.1', 'six'],
     entry_points={
         'console_scripts': [
             'ircelsos=ircelsos.main:main',
